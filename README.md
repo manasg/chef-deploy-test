@@ -1,4 +1,5 @@
 chef-deploy-test
 ================
 
-Chef-Test
+Playing with Chef Deploy resource
+
