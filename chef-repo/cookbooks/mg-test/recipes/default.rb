@@ -8,9 +8,9 @@ git repo do
     repository "https://github.com/manasg/chef-deploy-test"
     action :sync
     depth 5
-    notifies :create, "ruby_block[a_block]"
     notifies :run, "execute[clean]"
     notifies :run, "execute[build]"
+    notifies :run, "script[test]"
 end
 
 #build the dirty way!
@@ -32,10 +32,13 @@ execute "clean" do
     action :nothing
 end
 
+script "test" do
+    interpreter "bash"
 
-ruby_block "a_block" do
-    block do
-        Chef::Log.info("Hello! I was created")
-    end
+    code <<-END
+        echo "Lets do some post install stuff" > /tmp/t
+    END
+    
+    creates "/tmp/t"
     action :nothing
 end
