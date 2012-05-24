@@ -13,7 +13,7 @@ end
 
 ruby_block "a_block" do
     block do
-        log "I was created"
+        Chef::Log.info("Hello! I was created")
     end
     action :nothing
 end
