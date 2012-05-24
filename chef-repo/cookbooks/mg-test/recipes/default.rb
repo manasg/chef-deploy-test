@@ -1,8 +1,11 @@
-#
-# Cookbook Name:: mg-test
-# Recipe:: default
-#
-# Copyright 2012, YOUR_COMPANY_NAME
-#
-# All rights reserved - Do Not Redistribute
-#
+#Free!
+
+package "openjdk-7-jdk"
+package "git"
+
+repo = '/opt/repo'
+
+git repo do
+    repository "https://github.com/manasg/chef-deploy-test"
+    action :sync
+end
