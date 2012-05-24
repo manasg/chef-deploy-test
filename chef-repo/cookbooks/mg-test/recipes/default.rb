@@ -9,8 +9,8 @@ git repo do
     action :sync
     depth 5
     notifies :create, "ruby_block[a_block]"
-    notifies :execute, "execute[clean]"
-    notifies :execute, "execute[build]"
+    notifies :run, "execute[clean]"
+    notifies :run, "execute[build]"
 end
 
 #build the dirty way!
