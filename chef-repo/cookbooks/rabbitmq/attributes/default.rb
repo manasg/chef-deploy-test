@@ -21,7 +21,7 @@ default[:rabbitmq][:cluster_disk_nodes] = []
 default[:rabbitmq][:erlang_cookie] = 'AnyAlphaNumericStringWillDo'
 
 #ssl
-default[:rabbitmq][:ssl] = false
+default[:rabbitmq][:ssl] = true
 default[:rabbitmq][:ssl_port] = '5671'
 default[:rabbitmq][:ssl_cacert] = '/path/to/cacert.pem'
 default[:rabbitmq][:ssl_cert] = '/path/to/cert.pem'
