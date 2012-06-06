@@ -1,0 +1,8 @@
+{
+  "id": "nagiosadmin",
+   "groups": "sysadmin",
+   "htpasswd": "{SHA}I+U97gXtMed7aq5Vu8eO/ivaKNs=",
+   "nagios": {
+              "email": "manas@easilydo.com"
+             }
+}
