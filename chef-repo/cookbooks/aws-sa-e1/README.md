@@ -12,7 +12,7 @@ aws-sa-e1 Cookbook
 Requirements
 ------------
 - Depends on AWS cookbook
-- Databag called aws with an item credentials. That should contain your AWS access/secret keys. It is not added to the git repo (obviously)
+- Databag called aws with an item credentials (See chef-deploy-test/chef-repo/data_bags/aws/). That should contain your AWS access/secret keys. It is not added to the git repo (obviously)
 
 Attributes
 ----------
