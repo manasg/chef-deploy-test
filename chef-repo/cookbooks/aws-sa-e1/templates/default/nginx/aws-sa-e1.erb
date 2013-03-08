@@ -1,0 +1,9 @@
+server {
+        listen 80;
+        
+        location / {
+            root <%=node['e1']['www_root'] %>;
+            index index.html;
+        }
+       
+}
