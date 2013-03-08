@@ -6,7 +6,8 @@ aws-sa-e1 Cookbook
 - Creates FS
 - Mounts it
 - Installs and configures basic Nginx
-- Serves hello!
+- Nginx site is configured via template (See templates/)
+- Serves hello! 
 
 Requirements
 ------------
